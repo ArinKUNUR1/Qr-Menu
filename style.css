@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body {
+  font-family: 'poppins';
+}
+
+h1 {
+  font-family: 'indie flower';
+  text-align: center;
+  letter-spacing: 4px;
+  font-size: 32px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.buttons button {
+  border: 1px solid gray;
+  background: none;
+  padding: 10px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.buttons button:hover {
+  background: black;
+  color: white;
+}
+
+.buttons .cart-shopping {
+  font-size: 20px;
+  color: green;
+  border: 1px solid green;
+}
+
+.buttons .cart-shopping:hover {
+  background: green;
+}
+
+/* menü alanı */
+
+.menu-area {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#card {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  max-width: 600px;
+}
+
+#card img {
+  height: 170px;
+  border-radius: 10px;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-info .name {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-info .name p {
+  color: green;
+}
+
+.desc {
+  max-width: 700px;
+}
+
+.cart-plus {
+  border: none;
+  background: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  color: green;
+}
+
+/* Sepet */
+
+.modal-box {
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  background-color: #393e4689;
+  padding-right: 1000px;
+}
+
+.modal {
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  padding: 20px;
+  position: relative;
+  border-radius: 31px;
+}
+
+.active {
+  display: flex;
+}
+
+#close {
+  position: absolute;
+  right: 30px;
+  color: green;
+  cursor: pointer;
+}
+
+.urun-modal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #393e4689;
+  color: white;
+  border-radius: 10px;
+  margin-top: 60px;
+  padding: 6px;
+}
+
+.urun-modal img {
+  width: 90px;
+  border-radius: 10px;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.info h3 {
+  font-family: 'indie flower';
+  letter-spacing: 1px;
+}
+
+.info p {
+  color: green;
+}
+
+#cart-dash {
+  border: none;
+  background: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  color: green;
+}
+
+.alt {
+  position: absolute;
+  bottom: 0;
+  background-color: #393e4689;
+  color: white;
+  width: 520px;
+  left: 0;
+  padding: 5px 10px;
+  text-align: center;
+  border-bottom-right-radius: 31px;
+  border-bottom-left-radius: 31px;
+}
+
+.alt span-2 {
+  color: red;
+}
+
+#toplamBilgi {
+  color: red;
+}
+
+/* Media */
+
+@media (max-width: 600px) {
+  #card {
+    flex-direction: column;
+  }
+  
+  #card img {
+    width: 100%;
+    height: 250px;
+  }
+}
+
+
+.bi-cart-dash{
+  pointer-events: none;
+}
